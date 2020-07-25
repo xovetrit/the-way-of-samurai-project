@@ -1,0 +1,40 @@
+.app-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    "h h"
+    "n c";
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 10px;
+
+}
+
+.header {
+    grid-area: h;    
+    background-color: #2f90ee;
+    background-image: linear-gradient(62deg, #2f90ee 0%, #E0C3FC 100%);
+}
+.header img {
+    width: 40px;
+}
+.nav {
+    grid-area: n;
+    background-color: #2f90ee;
+    background-image: linear-gradient(62deg, #2f90ee 0%, #E0C3FC 100%);
+}
+.nav a {
+    color: #ffffff;
+    font-size: large;
+    padding-left: 10px;
+}
+.content {
+    grid-area: c;
+    background-color: #2f90ee;
+    background-image: linear-gradient(62deg, #2f90ee 0%, #E0C3FC 100%);
+}
+
+.content img {
+    width: 100%;
+}
