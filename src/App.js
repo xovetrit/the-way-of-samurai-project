@@ -10,7 +10,7 @@ function App() {
       <Header />
       <Navbar />
       <Profile />
-      THE WAY OF SAMURAI
+      &copy; THE WAY OF SAMURAI
     </div>
   );
 }

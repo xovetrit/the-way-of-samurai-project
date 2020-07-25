@@ -1,0 +1,10 @@
+.content {
+    grid-area: c;
+    background-color: #2f90ee;
+    border: solid 2px #2f90ee;
+    background-image: linear-gradient(180deg, #2f90ee 0%, #E0C3FC 100%);
+}
+
+.content img {
+    width: 100%;
+}

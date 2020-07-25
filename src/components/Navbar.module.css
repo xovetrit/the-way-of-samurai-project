@@ -1,0 +1,19 @@
+.nav {
+    grid-area: n;
+    border: solid 2px #2f90ee;
+    background-color: #2f90ee;
+    background-image: linear-gradient(180deg, #2f90ee 0%, #E0C3FC 100%);
+}
+.item {
+    color: #ffffff;
+    font-size: large;
+    padding-left: 10px;
+    transition: background-color .5s;
+}
+.item.active {
+    color: royalblue;
+    background-color: #ffffffc2;
+}
+.item.active:hover {
+    background-color: #fff;
+}

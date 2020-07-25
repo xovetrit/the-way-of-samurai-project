@@ -1,8 +1,9 @@
 import React from 'react';
+import classes from './Profile.module.css';
 
 function Profile() {
     return (
-        <div className='content'>
+        <div className={classes.content}>
             <div>
                 <img src='https://cdna.artstation.com/p/assets/images/images/005/514/686/large/gabriel-loo-carre-envdsn-cybpnkstreets-01.jpg?1491586828'></img>
             </div>
