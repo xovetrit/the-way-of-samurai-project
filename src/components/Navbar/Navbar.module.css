@@ -1,6 +1,6 @@
 .nav {
     grid-area: n;
-    border: solid 2px #434343;
+    /* border: solid 2px #434343; */
     background-color: #434343;
     /* background-image: linear-gradient(180deg, #2f90ee 0%, #E0C3FC 100%); */
 }
