@@ -1,5 +1,5 @@
 .item {
-    color : #fff;
+    color : #000;
 }
 
 .item img {
@@ -9,7 +9,7 @@
     object-fit: cover;
 }
 .like {
-    color: #fff;
+    color: gray;
     transition: all .7s;
     cursor: pointer;
 }

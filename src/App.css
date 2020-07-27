@@ -8,10 +8,13 @@
     grid-template-rows: 60px 1fr;
     grid-template-columns: 2fr 10fr;
     grid-gap: 5px;
+    color: #000;
 
 }
 
 .app-wrapper-content {
     grid-area: c;
-    background-color: #434343;
+    background-color: #fff;
+    border: solid 2px #d3d3d3;;
+    padding: 20px;
 }

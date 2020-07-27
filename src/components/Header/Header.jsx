@@ -4,7 +4,7 @@ import classes from './Header.module.css';
 function Header() {
     return (
         <header className={classes.header}>
-            <img src='https://f0.pngfuel.com/png/657/474/wolf-icon-png-clip-art.png'></img>
+            <img src='https://avatars.mds.yandex.net/get-pdb/2978659/bc09b369-08e7-4eda-8f4c-68c68d3b59d3/s1200?webp=false'></img>
         </header>
     );
 }
