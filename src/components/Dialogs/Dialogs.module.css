@@ -8,7 +8,10 @@
     border-right: 1px solid #edeef0;
     margin-right: 10px;
 }
-
+.dialogsItems a {
+    text-decoration: none;
+    color: #222831;
+}
 .dialogsItems .active {
     color: #057dfe;
     font-weight: 500;
