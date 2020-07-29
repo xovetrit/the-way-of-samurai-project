@@ -7,7 +7,6 @@ function Navbar() {
     <nav className={classes.nav}>
       <div className={classes.item}>
         <NavLink to='/profile' activeClassName={classes.activeLink}>Профиль</NavLink>
-        {/* <a href='/profile'>Профиль</a> */}
       </div>
       <div className={classes.item}>
         <NavLink to='/dialogs' activeClassName={classes.activeLink}>Сообщения</NavLink>
