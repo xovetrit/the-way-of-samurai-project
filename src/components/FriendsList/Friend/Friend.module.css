@@ -1,10 +1,26 @@
+.FriendsListAll {
+    display: flex;
+    float: left;
+}
 .friendAvaPlace {
     width: 50px;
     height: 50px;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 .friendAvaImg {
     width: 100%;
     border-radius: 50%;
     height: 100%;
     object-fit: cover;
+    border: 4px solid #35cc5b;
+}
+.friendNameAge {
+    color: #333;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.OnlineStatus {
+    color: #35cc5b;
 }
