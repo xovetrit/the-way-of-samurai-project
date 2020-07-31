@@ -8,6 +8,7 @@ import News from './components/News/News';
 import Music from './components/Music/Music';
 import Settings from './components/Settings/Settings';
 import { Route, BrowserRouter } from 'react-router-dom';
+import FriendsList from './components/FriendsList/FriendsList';
 
 function App(props) {
 
@@ -23,6 +24,7 @@ function App(props) {
           <Route path='/news' render={() => <News />} />
           <Route path='/music' render={() => <Music />} />
           <Route path='/settings' render={() => <Settings />} />
+          <Route path='/friendsList' render={()=> <FriendsList state={props.state.friendsListPage} />} />
 
         </div>
       &copy; THE WAY OF SAMURAI
