@@ -1,6 +1,7 @@
 .dialogs {
     display: grid;
     grid-template-columns: 2fr 10fr;
+    grid-template-areas: ;
     padding: 20px;
 }
 
@@ -45,4 +46,10 @@
     margin-top: 5px;
     background-color: #057dfe;
     border-radius: 10px 10px 10px 0px;
+}
+.newMessage {
+    margin-top: 50px;
+}
+.newMessage button {
+    display: block;
 }
