@@ -1,3 +1,5 @@
+import {rerenderEntireTree} from './../render';
+
 let state = {
 
     profilePage: {
@@ -40,9 +42,11 @@ export let addPost = (postMessage) => {
     let newPost = {
         id: 4,
         message: postMessage,
+        ava: 'https://www.province.ru/pskov/media/k2/items/cache/080b4dffeeea98952b99d2915da0b69c_L.jpg',
         likesCount: 0
     };
     state.profilePage.posts.push(newPost);
+    rerenderEntireTree(state);
 }
 
 
