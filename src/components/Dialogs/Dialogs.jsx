@@ -5,20 +5,23 @@ import Message from './Message/Message';
 
 function Dialogs(props) {
 
-    let dialogsElements = props.state.dialogs.map(d => <DialogItem name={d.name} id={d.id} ava={d.ava} />
+    let dialogsElements = props.dialogsPage.dialogs.map(d => <DialogItem name={d.name} id={d.id} ava={d.ava} />
     );
 
-    let messagesElements = props.state.messages.map(m => <Message message={m.message} />
+    let messagesElements = props.dialogsPage.messages.map(m => <Message message={m.message} />
     );
 
     let newMessageElement = React.createRef();
 
-    let addNewMessage = () => {
-        let message = newMessageElement.current.value;
-        return (
-            alert(message)
-        );
+    let addMessage = () => { 
+        props.addMessage();
     }
+
+    let onMessageChange = () => {
+        let text = newMessageElement.current.value;
+        props.updateNewMessageText(text);
+    }
+
 
     return (
         <div>
@@ -29,8 +32,8 @@ function Dialogs(props) {
                 <div className={classes.messages}>
                     {messagesElements}
                     <div className={classes.newMessage}>
-                        <textarea ref={newMessageElement} cols="50" rows="7"></textarea>
-                        <button onClick={addNewMessage}>Отправить</button>
+                        <textarea onChange={onMessageChange} ref={newMessageElement} cols="50" rows="7" value={props.newMessageText}/>
+                        <button onClick={addMessage}>Отправить</button>
                     </div>
                 </div>
             </div>
