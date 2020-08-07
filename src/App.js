@@ -11,7 +11,6 @@ import { Route } from 'react-router-dom';
 import FriendsList from './components/FriendsList/FriendsList';
 
 function App(props) {
-
   return (
     <div className='app-wrapper'>
       <Header />
